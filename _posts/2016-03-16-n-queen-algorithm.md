@@ -1,11 +1,7 @@
 ---
 layout: post
 title:  백트렉킹 알고리즘을 이용한 N-Queen 문제
-date:   2016-03-14
-author: Sooyoung
-categories: dev
-tags: dev algorithm backtrack
-cover:  "/assets/img/queen.png"
+comments: true
 ---
 
 ## N-Queen 문제 설명
