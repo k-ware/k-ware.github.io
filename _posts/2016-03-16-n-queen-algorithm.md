@@ -9,6 +9,8 @@ comments: true
 N-Queen 퍼즐은 N x N 크기의 체스판에 N 개의 퀸을, 서로 공격할 수 없도록 올려놓는 퍼즐입니다. (퀸은 체스에서 가장 강력한 기물로, 자신의 위치에서 상하좌우, 그리고 대각선 방향으로 이어진 직선 상의 어떤 기물도 공격할 수 있습니다)
 
 ![image](http://algospot.com/media/judge-attachments/bc92d43c2acc9acf45702485b3fb1e9e/nqueen.png)
+*출처: 알고스팟(http://algospot.com/media/judge-attachments/bc92d43c2acc9acf45702485b3fb1e9e/nqueen.png)*
+
 예를 들어, 위의 그림은 8x8 크기의 체스판에 8개의 퀸을 서로 공격할 수 없도록 올려놓은 예 입니다.
 
 체스판의 크기 N 이 주어졌을 때, N-Queen 퍼즐의 답이 모두 몇 개나 되는지를 계산하고 아래와 같이 출력하는 프로그램을 작성하세오. 한 답은 N개 퀸 모두의 위치로 정의되며, 한 퀸의 위치만 다르더라도 다른 답이라고 가정합니다.
@@ -39,7 +41,7 @@ n = 13, solution count is 73712.
 
 ![백트렉킹](/assets/img/backtrack.png)
 
-*백트렉킹 출저: https://ko.wikipedia.org/wiki/%ED%87%B4%EA%B0%81%EA%B2%80%EC%83%89*
+*백트렉킹 출처: https://ko.wikipedia.org/wiki/%ED%87%B4%EA%B0%81%EA%B2%80%EC%83%89*
 
 
 #### 백트렉킹
@@ -72,7 +74,7 @@ n = 13, solution count is 73712.
 위와 같은 규칙을 가지고 깊이 우선 탐색을 시작합니다. 그러면 N = 4인 경우 아래와 같은 그림이 될 것입니다.
 
 ![n-queen](/assets/img/queens4_backtrack.png)
-*그림 출저: http://ddmix.blogspot.kr/*
+*그림 출처: http://ddmix.blogspot.kr/*
 
 위의 그림처럼 유망한 노드라면 자식 노드로 들어가 다시 탬색 시작하고, 유망하지 않다면 탐색을 그만두고 다시 부모노드로 올라가 다음 노드를 탐색합니다. 이러한 방식으로 끝까지 탐색하는 것이 백트렉킹 알고리즘이자, N-queen문제를 푸는 방법입니다.
 
