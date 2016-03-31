@@ -10,7 +10,7 @@ title: k-ware dev blog
 email: k-ware@gmail.com
 description: >
    K-WARE의 개발블로그 입니다. 매월 16일 30일 기술뉴스를 발행하고 있습니다. 많은 관심 부탁드립니다!
-logo: "assets/images/logo/kware-logo.png"
+# logo: "assets/images/logo/kware-logo.png"
 baseurl: "" # the subpath of your site, e.g. /blog
 port: 4000
 url: "http://yourdomain.com" # the base hostname & protocol for your site
