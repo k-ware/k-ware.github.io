@@ -1,21 +1,39 @@
-markdown: redcarpet
-highlighter: null
-permalink: /:title
+# Welcome to Amplified for Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-url:
-baseurl:
+# Site settings
+title: k-ware dev blog
+email: k-ware@gmail.com
+description: >
+   K-WARE의 개발블로그 입니다. 매월 16일 30일 기술뉴스를 발행하고 있습니다. 많은 관심 부탁드립니다!
+# logo: "assets/images/logo/kware-logo.png"
+baseurl: "" # the subpath of your site, e.g. /blog
+port: 4000
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+paginate:	10 # The number of posts to show per page on your homepage
 
-redcarpet:
-  extensions: [strikethrough, tables]
+name: 'kware'
+bio: >
+  kware 개발 블로그입니다.d
+author_image: "/assets/images/author.jpg"
+twitter_username: jekyllrb
+github_username:  k-ware
 
-sass:
-  sass_dir: public/css
-  style: :compressed
+# Build settings
+markdown: kramdown
+
+kramdown:
+  parse_block_html: true
+
+gems:
+  - jekyll-paginate
 
 # Disqus comments
 comments :
   provider : disqus
   disqus :
     short_name : kwareblog
-
-

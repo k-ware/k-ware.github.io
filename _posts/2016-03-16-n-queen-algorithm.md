@@ -39,7 +39,7 @@ n = 13, solution count is 73712.
 위의 문제를 풀기위해 생각할수 있는 가장 간단?한 방법은 전수조사를 하는것입니다. 퀸이 올수 있는 모든 경우의 수를 두고, 그 중에서 답을 찾는 방법이죠. N이 4라고 가정한다면 각 퀸은 한 열의 하나씩만 올수 있기 때문에 이때 점검해야할 모든 경우의 수는 4 x 4 x 4 x 4 = 256 가지가 됩니다. 하지만 이와같은 방법은 굳이 탐색할 필요도 없는 경우까지 모두 탐색하기 때문에 비효율적입니다.
 
 
-![백트렉킹](/assets/img/backtrack.png)
+![백트렉킹](/assets/images/backtrack.png)
 
 *백트렉킹 출처: https://ko.wikipedia.org/wiki/%ED%87%B4%EA%B0%81%EA%B2%80%EC%83%89*
 
@@ -73,7 +73,7 @@ n = 13, solution count is 73712.
 
 위와 같은 규칙을 가지고 깊이 우선 탐색을 시작합니다. 그러면 N = 4인 경우 아래와 같은 그림이 될 것입니다.
 
-![n-queen](/assets/img/queens4_backtrack.png)
+![n-queen](/assets/images/queens4_backtrack.png)
 *그림 출처: http://ddmix.blogspot.kr/*
 
 위의 그림처럼 유망한 노드라면 자식 노드로 들어가 다시 탬색 시작하고, 유망하지 않다면 탐색을 그만두고 다시 부모노드로 올라가 다음 노드를 탐색합니다. 이러한 방식으로 끝까지 탐색하는 것이 백트렉킹 알고리즘이자, N-queen문제를 푸는 방법입니다.
